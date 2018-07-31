@@ -11,4 +11,14 @@ if (System.env.TRAVIS == 'true') {
       minHeapSize = '128m'
     }
   }
+
+  repositories {
+    mavenCentral()
+  }
+
+  dependencies {
+    compile group: 'javax.json.bind', name: 'javax.json.bind-api', version: '1.0'
+    compile group: 'org.eclipse', name: 'yasson', version: '1.0.1'
+  }
 }
+
